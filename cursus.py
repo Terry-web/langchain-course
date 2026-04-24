@@ -33,7 +33,7 @@ agent = create_agent(model=llm, tools=tools)
 
 def main():
     print("Hello from langchain-course!")
-    result = agent.invoke({"messages":HumanMessage(content="Search for the weather in the Oldambt")})
+    result = agent.invoke({"messages":HumanMessage(content="Search for a beekeeper in the province Groningen")})
     print(result)
 
 if __name__ == "__main__":
